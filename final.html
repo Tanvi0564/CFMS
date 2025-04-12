@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feedback Management System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    section {
+      display: none;
+      padding: 40px 20px;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h1 {
+      color: #2c3e50;
+    }
+
+    .brand-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .brand {
+      text-align: center;
+      width: 220px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .brand img {
+      width: 80px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .button {
+      padding: 14px 24px;
+      font-size: 22px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+      width: 220px;
+      color: white;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+    }
+
+    .button-AMAZON {
+      background-color: #dc3545;
+    }
+
+    .button-AMAZON:hover {
+      background-color: #c82333;
+    }
+
+    .button-CROCS {
+      background-color: #007bff;
+    }
+
+    .button-CROCS:hover {
+      background-color: #0056b3;
+    }
+
+    .button-FLIPKART {
+      background-color: #6c757d;
+    }
+
+    .button-FLIPKART:hover {
+      background-color: #5a6268;
+    }
+
+    .button-MEESHO {
+      background-color: #28a745;
+    }
+
+    .button-MEESHO:hover {
+      background-color: #218838;
+    }
+
+    .button-PUMA {
+      background-color: #ffc107;
+      color: black;
+    }
+
+    .button-PUMA:hover {
+      background-color: #e0a800;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button[type="submit"] {
+      background-color: #2ecc71;
+      color: white;
+      font-size: 18px;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #27ae60;
+    }
+
+    .btn-nav {
+      margin-top: 40px;
+      background-color: #3498db;
+      color: white;
+      font-size: 18px;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .btn-nav:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Home Section -->
+<section id="home" class="active">
+  <h1>Welcome to the Feedback Management System</h1>
+  <button class="btn-nav" onclick="showSection('brands')">Go to Brand Selection</button>
+</section>
+
+<!-- Brand Selection Section -->
+<section id="brands">
+  <h1>Select a Brand</h1>
+  <div class="brand-container">
+    <div class="brand">
+      <img src="amazon-logo.png" alt="Amazon Logo" />
+      <button class="button button-AMAZON" onclick="showSection('amazon')">Amazon</button>
+    </div>
+    <div class="brand">
+      <img src="crocs-logo.png" alt="Crocs Logo" />
+      <button class="button button-CROCS" onclick="showSection('crocs')">Crocs</button>
+    </div>
+    <div class="brand">
+      <img src="flipkart-logo.png" alt="Flipkart Logo" />
+      <button class="button button-FLIPKART" onclick="showSection('flipkart')">Flipkart</button>
+    </div>
+    <div class="brand">
+      <img src="meesho-logo.png" alt="Meesho Logo" />
+      <button class="button button-MEESHO" onclick="showSection('meesho')">Meesho</button>
+    </div>
+    <div class="brand">
+      <img src="puma-logo.png" alt="Puma Logo" />
+      <button class="button button-PUMA" onclick="showSection('puma')">Puma</button>
+    </div>
+  </div>
+</section>
+
+<!-- Feedback Forms -->
+<section id="amazon">
+  <h1>Amazon Feedback Form</h1>
+  <form>
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <select required>
+      <option value="">Select Product</option>
+      <option>Smartphone</option>
+      <option>Laptop</option>
+      <option>Headphones</option>
+      <option>Books</option>
+    </select>
+    <select required>
+      <option value="">Rating</option>
+      <option>1 - Poor</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5 - Excellent</option>
+    </select>
+    <textarea placeholder="Your Feedback" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<section id="crocs">
+  <h1>Crocs Feedback Form</h1>
+  <form>
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <select required>
+      <option value="">Crocs Type</option>
+      <option>Classic Clog</option>
+      <option>Slides</option>
+      <option>Sandals</option>
+    </select>
+    <select required>
+      <option value="">Rating</option>
+      <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+    </select>
+    <textarea placeholder="Your Feedback" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<section id="flipkart">
+  <h1>Flipkart Feedback Form</h1>
+  <form>
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <select required>
+      <option value="">Select Category</option>
+      <option>Mobile</option>
+      <option>Electronics</option>
+      <option>Clothing</option>
+    </select>
+    <textarea placeholder="Feedback" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<section id="meesho">
+  <h1>Meesho Feedback Form</h1>
+  <form>
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <select required>
+      <option value="">Product Type</option>
+      <option>Fashion</option>
+      <option>Accessories</option>
+      <option>Home Decor</option>
+    </select>
+    <textarea placeholder="Feedback" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<section id="puma">
+  <h1>Puma Feedback Form</h1>
+  <form>
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <select required>
+      <option value="">Product Type</option>
+      <option>Shoes</option>
+      <option>Sportswear</option>
+      <option>Accessories</option>
+    </select>
+    <textarea placeholder="Feedback" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<script>
+  function showSection(id) {
+    document.querySelectorAll("section").forEach(section => {
+      section.classList.remove("active");
+    });
+    document.getElementById(id).classList.add("active");
+  }
+</script>
+
+</body>
+</html>
