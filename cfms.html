@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unified Product Feedback Portal</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background-color: #f9f9f9; }
+        nav { background: #333; padding: 10px; display: flex; justify-content: center; flex-wrap: wrap; }
+        nav a { color: white; margin: 5px 10px; text-decoration: none; padding: 8px 16px; }
+        nav a:hover { background: #555; border-radius: 5px; }
+        section { display: none; padding: 20px; }
+        section.active { display: block; }
+    </style>
+</head>
+<body>
+    <nav>
+<a href="#amazon" onclick="showSection('amazon')">Amazon</a><a href="#crocs1" onclick="showSection('crocs1')">CROCS</a><a href="#flipkart" onclick="showSection('flipkart')">Flipkart</a><a href="#meesho11" onclick="showSection('meesho11')">Meesho</a><a href="#pumafinal" onclick="showSection('pumafinal')">Puma</a></nav><section id="amazon"><body>
+<h1>Amazon Product Feedback</h1>
+<div class="form-container">
+<h3>We value your opinion on Amazon products!</h3>
+<form id="amazon-feedback-form">
+<label for="amazon-name">Your Name:</label>
+<input id="amazon-name" name="name" required="" type="text"/>
+<label for="amazon-email">Your Email:</label>
+<input id="amazon-email" name="email" required="" type="email"/>
+<label for="amazon-product">Which product are you providing feedback on?</label>
+<select id="amazon-product" name="product" required="">
+<option disabled="" selected="" value="">Select a product</option>
+<option value="Smartphone">Smartphone</option>
+<option value="Laptop">Laptop</option>
+<option value="Headphones">Headphones</option>
+<option value="Books">Books</option>
+<option value="Home Appliances">Home Appliances</option>
+<option value="Other">Other</option>
+</select>
+<label for="amazon-rating">How would you rate the product?</label>
+<select id="amazon-rating" name="rating" required="">
+<option disabled="" selected="" value="">Select a rating</option>
+<option value="1">1 - Very Poor</option>
+<option value="2">2 - Poor</option>
+<option value="3">3 - Average</option>
+<option value="4">4 - Good</option>
+<option value="5">5 - Excellent</option>
+</select>
+<label for="amazon-quality">How would you rate the quality of the product?</label>
+<select id="amazon-quality" name="quality" required="">
+<option disabled="" selected="" value="">Select quality rating</option>
+<option value="1">1 - Very Poor</option>
+<option value="2">2 - Poor</option>
+<option value="3">3 - Average</option>
+<option value="4">4 - Good</option>
+<option value="5">5 - Excellent</option>
+</select>
+<label for="amazon-value">How would you rate the value for money of the product?</label>
+<select id="amazon-value" name="value" required="">
+<option disabled="" selected="" value="">Select value for money rating</option>
+<option value="1">1 - Very Poor</option>
+<option value="2">2 - Poor</option>
+<option value="3">3 - Average</option>
+<option value="4">4 - Good</option>
+<option value="5">5 - Excellent</option>
+</select>
+<label for="amazon-delivery">How would you rate the delivery experience?</label>
+<select id="amazon-delivery" name="delivery" required="">
+<option disabled="" selected="" value="">Select delivery rating</option>
+<option value="1">1 - Very Poor</option>
+<option value="2">2 - Poor</option>
+<option value="3">3 - Average</option>
+<option value="4">4 - Good</option>
+<option value="5">5 - Excellent</option>
+</select>
+<label for="amazon-feedback">Any additional comments or suggestions?</label>
+<textarea id="amazon-feedback" name="feedback" placeholder="Tell us more about your experience..." required="" rows="4"></textarea>
+<button type="submit">Submit Feedback</button>
+</form></div></body></section><section id="crocs1"><body>
+<h1>CROCS Product Feedback</h1>
+<div class="form-container">
+<h3>We'd love to hear your thoughts on our product!</h3>
+<form id="crocs1-feedback-form">
+<label for="crocs1-name">Your Name:</label>
+<input id="crocs1-name" name="name" required="" type="text"/>
+<label for="crocs1-email">Your Email:</label>
+<input id="crocs1-email" name="email" required="" type="email"/>
+<label for="crocs1-product">Which product are you providing feedback on?</label>
+<select id="crocs1-product" name="product" required="">
+<option disabled="" selected="" value="">Select a product</option>
+<option value="CROCS Classic Clog">CROCS Classic Clog</option>
+<option value="CROCS LiteRide">CROCS LiteRide</option>
+<option value="CROCS Swiftwater">CROCS Swiftwater</option>
+<option value="CROCS Sandals">CROCS Sandals</option>
+<option value="Other">Other</option>
+</select>
+<label for="crocs1-rating">How would you rate the product?</label>
+<select id="crocs1-rating" name="rating" required="">
+<option disabled="" selected="" value="">Select a rating</option>
+<option value="1">1 - Very Poor</option>
+<option value="2">2 - Poor</option>
+<option value="3">3 - Average</option>
+<option value="4">4 - Good</option>
+<option value="5">5 - Excellent</option>
+</select>
+<label for="crocs1-comfort">How comfortable is the product?</label>
+<select id="crocs1-comfort" name="comfort" required="">
+<option disabled="" selected="" value="">Select comfort level</option>
+<option value="1">1 - Very Uncomfortable</option>
+<option value="2">2 - Uncomfortable</option>
+<option value="3">3 - Neutral</option>
+<option value="4">4 - Comfortable</option>
+<option value="5">5 - Very Comfortable</option>
+</select>
+<label for="crocs1-durability">How would you rate the durability of the product?</label>
+<select id="crocs1-durability" name="durability" required="">
+<option disabled="" selected="" value="">Select durability rating</option>
+<option value="1">1 - Very Poor</option>
+<option value="2">2 - Poor</option>
+<option value="3">3 - Average</option>
+<option value="4">4 - Good</option>
+<option value="5">5 - Excellent</option>
+</select>
+<label for="crocs1-feedback">Additional Comments:</label>
+<textarea id="crocs1-feedback" name="feedback" placeholder="Tell us more about your experience..." required="" rows="4"></textarea>
+<button type="submit">Submit Feedback</button>
+</form>
+<div id="crocs1-feedback-display" style="margin-top: 20px; font-size: 18px; color: green;"></div>
+</div>
+<script>
+        // Handle form submission
+        document.getElementById('crocs1-feedback-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from refreshing the page
+
+            // Get form values
+            const name = document.getElementById('crocs1-name').value;
+            const email = document.getElementById('crocs1-email').value;
+            const product = document.getElementById('crocs1-product').value;
+            const rating = document.getElementById('crocs1-rating').value;
+            const comfort = document.getElementById('crocs1-comfort').value;
+            const durability = document.getElementById('crocs1-durability').value;
+            const feedback = document.getElementById('crocs1-feedback').value;
+
+            // Display feedback on the same page (in a div)
+            document.getElementById('crocs1-feedback-display').innerHTML = `
+                <h3>Thank you for your feedback!</h3>
+                <p><strong>Name:</strong> ${name}</p>
+                <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Product:</strong> ${product}</p>
+                <p><strong>Rating:</strong> ${rating} (Rating out of 5)</p>
+                <p><strong>Comfort Level:</strong> ${comfort} (Comfort level out of 5)</p>
+                <p><strong>Durability Rating:</strong> ${durability} (Durability out of 5)</p>
+                <p><strong>Additional Comments:</strong> ${feedback}</p>
+            `;
+           
+            // Optionally, you can clear the form after submission
+            document.getElementById('crocs1-feedback-form').reset();
+        });
+    </script>
+</body></section><section id="flipkart"><body>
+<h1>Flipkart Product Feedback</h1>
+<div class="form-container">
+<h3>We Value Your Feedback on Flipkart Products!</h3>
+<form id="flipkart-feedback-form">
+<label for="flipkart-name">Your Name:</label>
+<input id="flipkart-name" name="name" required="" type="text"/>
+<label for="flipkart-email">Your Email:</label>
+<input id="flipkart-email" name="email" required="" type="email"/>
+<label for="flipkart-product">Which product are you providing feedback on?</label>
+<select id="flipkart-product" name="product" required="">
+<option disabled="" selected="" value="">Select a product</option>
+<option value="Smartphone">Smartphone</option>
+<option value="Laptop">Laptop</option>
+<option value="Headphones">Headphones</option>
+<option value="Washing Machine">Washing Machine</option>
+<option value="Other">Other</option>
+</select>
+<label for="flipkart-rating">How would you rate the product?</label>
+<select id="flipkart-rating" name="rating" required="">
+<option disabled="" selected="" value="">Select a rating</option>
+<option value="1">1 - Very Poor</option>
+<option value="2">2 - Poor</option>
+<option value="3">3 - Average</option>
+<option value="4">4 - Good</option>
+<option value="5">5 - Excellent</option>
+</select>
+<label for="flipkart-quality">How would you rate the quality of the product?</label>
+<select id="flipkart-quality" name="quality" required="">
+<option disabled="" selected="" value="">Select quality rating</option>
+<option value="1">1 - Very Poor</option>
+<option value="2">2 - Poor</option>
+<option value="3">3 - Average</option>
+<option value="4">4 - Good</option>
+<option value="5">5 - Excellent</option>
+</select>
+<label for="flipkart-delivery">How would you rate the delivery experience?</label>
+<select id="flipkart-delivery" name="delivery" required="">
+<option disabled="" selected="" value="">Select delivery rating</option>
+<option value="1">1 - Very Poor</option>
+<option value="2">2 - Poor</option>
+<option value="3">3 - Average</option>
+<option value="4">4 - Good</option>
+<option value="5">5 - Excellent</option>
+</select>
+<label for="flipkart-feedback">Any additional comments or suggestions?</label>
+<textarea id="flipkart-feedback" name="feedback" placeholder="Tell us more about your experience..." required="" rows="4"></textarea>
+<button type="submit">Submit Feedback</button>
+</form>
+<div id="flipkart-feedback-display" style="margin-top: 20px; font-size: 18px; color: green;"></div>
+</div>
+<script>
+        // Handle form submission
+        document.getElementById('flipkart-feedback-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from refreshing the page
+
+            // Get form values
+            const name = document.getElementById('flipkart-name').value;
+            const email = document.getElementById('flipkart-email').value;
+            const product = document.getElementById('flipkart-product').value;
+            const rating = document.getElementById('flipkart-rating').value;
+            const quality = document.getElementById('flipkart-quality').value;
+            const delivery = document.getElementById('flipkart-delivery').value;
+            const feedback = document.getElementById('flipkart-feedback').value;
+
+            // Display feedback on the same page (in a div)
+            document.getElementById('flipkart-feedback-display').innerHTML = `
+                <h3>Thank you for your feedback!</h3>
+                <p><strong>Name:</strong> ${name}</p>
+                <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Product:</strong> ${product}</p>
+                <p><strong>Rating:</strong> ${rating} (Rating out of 5)</p>
+                <p><strong>Quality Rating:</strong> ${quality} (Quality out of 5)</p>
+                <p><strong>Delivery Rating:</strong> ${delivery} (Delivery out of 5)</p>
+                <p><strong>Additional Comments:</strong> ${feedback}</p>
+            `;
+           
+            // Optionally, you can clear the form after submission
+            document.getElementById('flipkart-feedback-form').reset();
+        });
+    </script>
+</body></section><section id="meesho11"><body>
+<h1>Meesho Product Feedback</h1>
+<div class="form-container">
+<h3>We'd love to hear your thoughts on Meesho products!</h3>
+<form id="meesho11-feedback-form">
+<label for="meesho11-name">Your Name:</label>
+<input id="meesho11-name" name="name" required="" type="text"/>
+<label for="meesho11-email">Your Email:</label>
+<input id="meesho11-email" name="email" required="" type="email"/>
+<label for="meesho11-product">Which product are you providing feedback on?</label>
+<select id="meesho11-product" name="product" required="">
+<option disabled="" selected="" value="">Select a product</option>
+<option value="Clothing">Clothing</option>
+<option value="Footwear">Footwear</option>
+<option value="Accessories">Accessories</option>
+<option value="Home Decor">Home Decor</option>
+<option value="Other">Other</option>
+</select>
+<label for="meesho11-rating">How would you rate the product?</label>
+<select id="meesho11-rating" name="rating" required="">
+<option disabled="" selected="" value="">Select a rating</option>
+<option value="5">5 - Excellent</option>
+<option value="4">4 - Good</option>
+<option value="3">3 - Average</option>
+<option value="2">2 - Poor</option>
+<option value="1">1 - Very Poor</option>
+</select>
+<label for="meesho11-experience">Tell us about your experience:</label>
+<textarea id="meesho11-experience" name="experience" placeholder="Write your feedback here..." required="" rows="4"></textarea>
+<label for="meesho11-improvements">Any suggestions for improvement?</label>
+<textarea id="meesho11-improvements" name="improvements" placeholder="Let us know how we can do better..." rows="3"></textarea>
+<label class="checkbox-label">
+<input id="meesho11-subscribe" name="subscribe" type="checkbox"/>
+                Subscribe to our newsletter for updates and offers
+            </label>
+<button type="submit">Submit Feedback</button>
+</form>
+</div>
+<script>
+        document.getElementById("meesho11-feedback-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            // You can replace this with your own backend submission logic
+            const name = document.getElementById("meesho11-name").value;
+            const product = document.getElementById("meesho11-product").value;
+            const rating = document.getElementById("meesho11-rating").value;
+
+            alert(`Thank you, ${name}! Your feedback for "${product}" (Rating: ${rating}) has been received.`);
+            this.reset();
+        });
+    </script>
+</body></section><section id="pumafinal"><body>
+<h1>Puma Product Feedback</h1>
+<div class="form-container">
+<h3>Your feedback helps us improve Puma products!</h3>
+<form id="pumafinal-feedback-form">
+<label for="pumafinal-name">Your Name:</label>
+<input id="pumafinal-name" name="name" required="" type="text"/>
+<label for="pumafinal-email">Your Email:</label>
+<input id="pumafinal-email" name="email" required="" type="email"/>
+<label for="pumafinal-product">Which product are you providing feedback on?</label>
+<select id="pumafinal-product" name="product" required="">
+<option disabled="" selected="" value="">Select a product</option>
+<option value="Running Shoes">Running Shoes</option>
+<option value="Sports Apparel">Sports Apparel</option>
+<option value="Footwear">Footwear</option>
+<option value="Accessories">Accessories</option>
+<option value="Other">Other</option>
+</select>
+<label for="pumafinal-fit">How would you rate the fit of the product?</label>
+<select id="pumafinal-fit" name="fit" required="">
+<option disabled="" selected="" value="">Select fit rating</option>
+<option value="1">1 - Very Poor Fit</option>
+<option value="2">2 - Poor Fit</option>
+<option value="3">3 - Average Fit</option>
+<option value="4">4 - Good Fit</option>
+<option value="5">5 - Perfect Fit</option>
+</select>
+<label for="pumafinal-quality">How would you rate the quality of the product?</label>
+<select id="pumafinal-quality" name="quality" required="">
+<option disabled="" selected="" value="">Select quality rating</option>
+<option value="1">1 - Very Poor</option>
+<option value="2">2 - Poor</option>
+<option value="3">3 - Average</option>
+<option value="4">4 - Good</option>
+<option value="5">5 - Excellent</option>
+</select>
+<label for="pumafinal-comfort">How comfortable is the product?</label>
+<select id="pumafinal-comfort" name="comfort" required="">
+<option disabled="" selected="" value="">Select comfort rating</option>
+<option value="1">1 - Very Uncomfortable</option>
+<option value="2">2 - Uncomfortable</option>
+<option value="3">3 - Average Comfort</option>
+<option value="4">4 - Comfortable</option>
+<option value="5">5 - Very Comfortable</option>
+</select>
+<label for="pumafinal-style">How would you rate the style of the product?</label>
+<select id="pumafinal-style" name="style" required="">
+<option disabled="" selected="" value="">Select style rating</option>
+<option value="1">1 - Very Unstylish</option>
+<option value="2">2 - Unstylish</option>
+<option value="3">3 - Average Style</option>
+<option value="4">4 - Stylish</option>
+<option value="5">5 - Very Stylish</option>
+</select>
+<label for="pumafinal-overall">Overall, how satisfied are you with the product?</label>
+<select id="pumafinal-overall" name="overall" required="">
+<option disabled="" selected="" value="">Select overall rating</option>
+<option value="1">1 - Very Dissatisfied</option>
+<option value="2">2 - Dissatisfied</option>
+<option value="3">3 - Neutral</option>
+<option value="4">4 - Satisfied</option>
+<option value="5">5 - Very Satisfied</option>
+</select>
+<label for="pumafinal-feedback">Any additional comments or suggestions?</label>
+<textarea id="pumafinal-feedback" name="feedback" placeholder="Tell us more about your experience..." required="" rows="4"></textarea>
+<button type="submit">Submit Feedback</button>
+</form>
+<div id="pumafinal-feedback-display" style="margin-top: 20px; font-size: 18px; color: green;"></div>
+</div>
+<script></script></body></section>
+<script>
+    function showSection(id) {
+        document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+        document.getElementById(id).classList.add('active');
+    }
+    window.onload = () => showSection('amazon');
+</script>
+</body>
+</html>
