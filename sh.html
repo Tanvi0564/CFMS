@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unified Product Feedback Portal</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #f4f7fc;
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: #34495e;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        nav {
+            background-color: #2c3e50;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        nav a:hover, nav a.active {
+            background-color: #2980b9;
+            border-radius: 5px;
+            transform: scale(1.1);
+        }
+
+        /* Section Styles */
+        section {
+            display: none;
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 900px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        section.active {
+            display: block;
+        }
+
+        h1 {
+            color: #34495e;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+        h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        /* Form Styles */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, select, textarea {
+            padding: 10px;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            padding: 12px;
+            background-color: #3498db;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #34495e;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to the Unified Product Feedback Portal</h1>
+    <p>We value your opinions on various products! Share your feedback below.</p>
+</header>
+
+<nav>
+    <a href="#home" onclick="showSection('home')" class="active">Home</a>
+    <a href="#amazon" onclick="showSection('amazon')">Amazon</a>
+    <a href="#crocs1" onclick="showSection('crocs1')">CROCS</a>
+    <a href="#flipkart" onclick="showSection('flipkart')">Flipkart</a>
+    <a href="#meesho11" onclick="showSection('meesho11')">Meesho</a>
+    <a href="#pumafinal" onclick="showSection('pumafinal')">Puma</a>
+</nav>
+
+<!-- Home Section -->
+<section id="home" class="active">
+    <h1>Welcome to Our Feedback Portal</h1>
+    <p>We have gathered feedback forms from several major brands. Choose your favorite and provide valuable feedback!</p>
+</section>
+
+<!-- Amazon Feedback Section -->
+<section id="amazon">
+    <h1>Amazon Product Feedback</h1>
+    <h3>We value your opinion on Amazon products!</h3>
+    <form id="amazon-feedback-form">
+        <label for="amazon-name">Your Name:</label>
+        <input id="amazon-name" name="name" required type="text"/>
+        <label for="amazon-email">Your Email:</label>
+        <input id="amazon-email" name="email" required type="email"/>
+        <label for="amazon-product">Which product are you providing feedback on?</label>
+        <select id="amazon-product" name="product" required>
+            <option disabled selected value="">Select a product</option>
+            <option value="Smartphone">Smartphone</option>
+            <option value="Laptop">Laptop</option>
+            <option value="Headphones">Headphones</option>
+            <option value="Books">Books</option>
+            <option value="Home Appliances">Home Appliances</option>
+            <option value="Other">Other</option>
+        </select>
+        <label for="amazon-rating">How would you rate the product?</label>
+        <select id="amazon-rating" name="rating" required>
+            <option disabled selected value="">Select a rating</option>
+            <option value="1">1 - Very Poor</option>
+            <option value="2">2 - Poor</option>
+            <option value="3">3 - Average</option>
+            <option value="4">4 - Good</option>
+            <option value="5">5 - Excellent</option>
+        </select>
+        <button type="submit">Submit Feedback</button>
+    </form>
+</section>
+
+<!-- CROCS Feedback Section -->
+<section id="crocs1">
+    <h1>CROCS Product Feedback</h1>
+    <h3>We value your opinion on CROCS products!</h3>
+    <form id="crocs-feedback-form">
+        <label for="crocs-name">Your Name:</label>
+        <input id="crocs-name" name="name" required type="text"/>
+        <label for="crocs-email">Your Email:</label>
+        <input id="crocs-email" name="email" required type="email"/>
+        <label for="crocs-product">Which product are you providing feedback on?</label>
+        <select id="crocs-product" name="product" required>
+            <option disabled selected value="">Select a product</option>
+            <option value="Clogs">Clogs</option>
+            <option value="Sandals">Sandals</option>
+            <option value="Slippers">Slippers</option>
+            <option value="Boots">Boots</option>
+            <option value="Other">Other</option>
+        </select>
+        <label for="crocs-rating">How would you rate the product?</label>
+        <select id="crocs-rating" name="rating" required>
+            <option disabled selected value="">Select a rating</option>
+            <option value="1">1 - Very Poor</option>
+            <option value="2">2 - Poor</option>
+            <option value="3">3 - Average</option>
+            <option value="4">4 - Good</option>
+            <option value="5">5 - Excellent</option>
+        </select>
+        <button type="submit">Submit Feedback</button>
+    </form>
+</section>
+
+<!-- Flipkart Feedback Section -->
+<section id="flipkart">
+    <h1>Flipkart Product Feedback</h1>
+    <h3>We value your opinion on Flipkart products!</h3>
+    <form id="flipkart-feedback-form">
+        <label for="flipkart-name">Your Name:</label>
+        <input id="flipkart-name" name="name" required type="text"/>
+        <label for="flipkart-email">Your Email:</label>
+        <input id="flipkart-email" name="email" required type="email"/>
+        <label for="flipkart-product">Which product are you providing feedback on?</label>
+        <select id="flipkart-product" name="product" required>
+            <option disabled selected value="">Select a product</option>
+            <option value="Smartphone">Smartphone</option>
+            <option value="Laptop">Laptop</option>
+            <option value="Headphones">Headphones</option>
+            <option value="Books">Books</option>
+            <option value="Home Appliances">Home Appliances</option>
+            <option value="Other">Other</option>
+        </select>
+        <label for="flipkart-rating">How would you rate the product?</label>
+        <select id="flipkart-rating" name="rating" required>
+            <option disabled selected value="">Select a rating</option>
+            <option value="1">1 - Very Poor</option>
+            <option value="2">2 - Poor</option>
+            <option value="3">3 - Average</option>
+            <option value="4">4 - Good</option>
+            <option value="5">5 - Excellent</option>
+        </select>
+        <button type="submit">Submit Feedback</button>
+    </form>
+</section>
+
+<!-- Meesho Feedback Section -->
+<section id="meesho11">
+    <h1>Meesho Product Feedback</h1>
+    <h3>We value your opinion on Meesho products!</h3>
+    <form id="meesho-feedback-form">
+        <label for="meesho-name">Your Name:</label>
+        <input id="meesho-name" name="name" required type="text"/>
+        <label for="meesho-email">Your Email:</label>
+        <input id="meesho-email" name="email" required type="email"/>
+        <label for="meesho-product">Which product are you providing feedback on?</label>
+        <select id="meesho-product" name="product" required>
+            <option disabled selected value="">Select a product</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Accessories">Accessories</option>
+            <option value="Footwear">Footwear</option>
+            <option value="Jewelry">Jewelry</option>
+            <option value="Other">Other</option>
+        </select>
+        <label for="meesho-rating">How would you rate the product?</label>
+        <select id="meesho-rating" name="rating" required>
+            <option disabled selected value="">Select a rating</option>
+            <option value="1">1 - Very Poor</option>
+            <option value="2">2 - Poor</option>
+            <option value="3">3 - Average</option>
+            <option value="4">4 - Good</option>
+            <option value="5">5 - Excellent</option>
+        </select>
+        <button type="submit">Submit Feedback</button>
+    </form>
+</section>
+
+<!-- Puma Feedback Section -->
+<section id="pumafinal">
+    <h1>Puma Product Feedback</h1>
+    <h3>We value your opinion on Puma products!</h3>
+    <form id="puma-feedback-form">
+        <label for="puma-name">Your Name:</label>
+        <input id="puma-name" name="name" required type="text"/>
+        <label for="puma-email">Your Email:</label>
+        <input id="puma-email" name="email" required type="email"/>
+        <label for="puma-product">Which product are you providing feedback on?</label>
+        <select id="puma-product" name="product" required>
+            <option disabled selected value="">Select a product</option>
+            <option value="Sneakers">Sneakers</option>
+            <option value="Sportswear">Sportswear</option>
+            <option value="Accessories">Accessories</option>
+            <option value="Other">Other</option>
+        </select>
+        <label for="puma-rating">How would you rate the product?</label>
+        <select id="puma-rating" name="rating" required>
+            <option disabled selected value="">Select a rating</option>
+            <option value="1">1 - Very Poor</option>
+            <option value="2">2 - Poor</option>
+            <option value="3">3 - Average</option>
+            <option value="4">4 - Good</option>
+            <option value="5">5 - Excellent</option>
+        </select>
+        <button type="submit">Submit Feedback</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Unified Feedback Portal | All Rights Reserved</p>
+</footer>
+
+<script>
+    function showSection(id) {
+        document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+        document.getElementById(id).classList.add('active');
+        
+        // Highlight the active navigation link
+        document.querySelectorAll('nav a').forEach(link => link.classList.remove('active'));
+        const activeLink = document.querySelector(`nav a[href="#${id}"]`);
+        if (activeLink) activeLink.classList.add('active');
+    }
+    window.onload = () => showSection('home');
+</script>
+
+</body>
+</html>
